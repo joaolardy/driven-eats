@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>DrivenEats</title>
+    <script src="script.js"> </script>
+</head>
+<body>
+    <header>
+        <h1>DrivenEats</h1>
+        <p>Sua comida em 6 minutos</p>
+    </header> 
+    <main>
+        <section class="barra-produtos">
+            <div class="titulo-secao">
+                <h2>Primeiro seu prato</h2>
+            </div>
+            <div class="cards-pratos">
+                <div onclick="selecionaPrato(this)" class="fundo-card">
+                    <div class="card">
+                        <img src="images/pratos-principais/frango.png">
+                        <p class="titulo-card">Frango com Quiabo</p>
+                        <p class="descricao-card">Galinha caipira,<br>quiabo e arroz</p>
+                        <p class="preco-card">R$ 19,90</p>
+                    </div>
+                </div>
+                <div onclick="selecionaPrato(this)" class="fundo-card">
+                    <div class="card">
+                        <img src="images/pratos-principais/cheddar.png">
+                        <p class="titulo-card">Cheddar McMelt</p>
+                        <p class="descricao-card">Hamburguer 120g,<br>cheddar e cebola</p>
+                        <p class="preco-card">R$ 14,90</p>
+                    </div>
+                </div>
+                <div onclick="selecionaPrato(this)" class="fundo-card">
+                    <div class="card">
+                        <img src="images/pratos-principais/brotinho.png">
+                        <p class="titulo-card">Pizza Brotinho</p>
+                        <p class="descricao-card">Massa artesanal,<br>recheio saboroso</p>
+                        <p class="preco-card">R$ 17,90</p>
+                    </div>
+                </div>
+                <div onclick="selecionaPrato(this)" class="fundo-card">
+                    <div class="card">
+                        <img src="images/pratos-principais/salada.png">
+                        <p class="titulo-card">Salada Capresi</p>
+                        <p class="descricao-card">Folhas verdes,<br>palmito e tomate</p>
+                        <p class="preco-card">R$ 9,90</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="barra-produtos">
+            <div class="titulo-secao">
+                <h2>Agora, sua bebida</h2>
+            </div>
+            <div class="cards-pratos">
+                <div onclick="selecionaDrink(this)" class="fundo-card">
+                    <div class="card">
+                        <img src="images/bebidas/itubaina.png">
+                        <p class="titulo-card">Itubaina Lata</p>
+                        <p class="descricao-card">Refrigerante sabor<br>tutti-frutti</p>
+                        <p class="preco-card">R$ 4,90</p>
+                    </div>
+                </div>
+                <div onclick="selecionaDrink(this)" class="fundo-card">
+                    <div class="card">
+                        <img src="images/bebidas/jesus.png">
+                        <p class="titulo-card">Guaraná Jesus Lata</p>
+                        <p class="descricao-card">Refrigerante rosa<br>sabor guaraná.</p>
+                        <p class="preco-card">R$ 6,90</p>
+                    </div>
+                </div>
+                <div onclick="selecionaDrink(this)" class="fundo-card">
+                    <div class="card">
+                        <img src="images/bebidas/mate-couro.jpg">
+                        <p class="titulo-card">Mate Couro Garrafa</p>
+                        <p class="descricao-card">Refrigerante de mate<br>e chapéu de couro</p>
+                        <p class="preco-card">R$ 5,90</p>
+                    </div>
+                </div>
+                <div onclick="selecionaDrink(this)" class="fundo-card">
+                    <div class="card">
+                        <img src="images/bebidas/fanta.png">
+                        <p class="titulo-card">Fanta Laranja</p>
+                        <p class="descricao-card">Refrigerante sabor<br>laranja</p>
+                        <p class="preco-card">R$ 5,50</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="barra-produtos">
+            <div class="titulo-secao">
+                <h2>Por fim, sua sobremesa</h2>
+            </div>
+            <div class="cards-pratos">
+                <div onclick="selecionaSobremesa(this)" class="fundo-card">
+                    <div class="card">
+                        <img src="images/sobremesas/romeu.png">
+                        <p class="titulo-card">Romeu e Julieta</p>
+                        <p class="descricao-card">Doce de goiaba e<br>queijo minas</p>
+                        <p class="preco-card">R$ 8,90</p>
+                    </div>
+                </div>
+                <div onclick="selecionaSobremesa(this)" class="fundo-card">
+                    <div class="card">
+                        <img src="images/sobremesas/pudim.png">
+                        <p class="titulo-card">Pudim Furadinho</p>
+                        <p class="descricao-card">Pudim de leite<br>condensado</p>
+                        <p class="preco-card">R$ 10,90</p>
+                    </div>
+                </div>
+                <div onclick="selecionaSobremesa(this)" class="fundo-card">
+                    <div class="card">
+                        <img src="images/sobremesas/casquinha.png">
+                        <p class="titulo-card">Casquinhas</p>
+                        <p class="descricao-card">Casca de laranja<br>desidratada</p>
+                        <p class="preco-card">R$ 4,90</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div onclick="mensagemWhatsApp()" class="botao-finalizar">
+            <p>Selecione os 3 itens <br>para fechar o pedido</p>
+        </div>
+    </footer>
+</body>
+</html>
